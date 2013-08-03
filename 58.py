@@ -9,6 +9,7 @@ def prime(n):
 			return False
 	return True
 
+# Set of helper functions along each diagonal
 def upright(d):
 	return 4*d**2-10*d+7
 def upleft(d):
@@ -18,32 +19,27 @@ def downleft(d):
 def downright(d):
 	return 4*d**2-4*d+1
 
-def percentPrimeSpiral(sideLen):
+# Starting values for while loop
+primeRatio = 1.0
+sideLen = 3
+numPrimes = 0
+
+while primeRatio > 0.10:
 	diagonalLen = (sideLen+1)/2
 	totalDiagonals = (diagonalLen-1)*4 + 1
 
-	numPrimes = 0
-	for i in range(1,diagonalLen+1):
-		if prime(upright(i)):
-			numPrimes += 1
-		if prime(upleft(i)):
-			numPrimes += 1
-		if prime(downright(i)):
-			numPrimes += 1	
-		if prime(downleft(i)):
-			numPrimes += 1
-	return numPrimes / float(totalDiagonals)
+	if prime(upright(diagonalLen)):
+		numPrimes += 1
+	if prime(upleft(diagonalLen)):
+		numPrimes += 1
+	if prime(downright(diagonalLen)):
+		numPrimes += 1	
+	if prime(downleft(diagonalLen)):
+		numPrimes += 1
 
-def main():
-	primeRatio = .99
-	sideLen = 1001
+	primeRatio = numPrimes / float(totalDiagonals)
+	sideLen += 2
 
-	while primeRatio > 0.12:
-		primeRatio = percentPrimeSpiral(sideLen)
-		sideLen += 10
-		print primeRatio
-
-	print sideLen
-	print primeRatio	
-
-main()
+# Adjust sidelength by 2
+print sideLen - 2
+print primeRatio

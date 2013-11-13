@@ -18,7 +18,7 @@ for power in range(1,100):
 		# print "Bounds are from " + str(lowerbound) + " < x < " + str(upperbound)
 		
 		if currentpower >= lowerbound and currentpower < upperbound:
-			print counter**power
+			print(counter**power)
 			powerful += 1
 		counter += 1
-print powerful	
+print(powerful)	

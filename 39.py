@@ -22,4 +22,4 @@ for i in range(1000):
 		bestpsolution = i
 		maxsolutions = numsolutions
 
-print bestpsolution
+print(bestpsolution)

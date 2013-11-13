@@ -18,4 +18,4 @@ for i in range(1,10000000):
 	if digchain(i) == 89:
 		num89 += 1
 
-print num89
+print(num89)

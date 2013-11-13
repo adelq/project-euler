@@ -24,4 +24,4 @@ for a in range(total, -1, -200):
 						for g in range(f, -1, -2):
 							ways += 1
 
-print ways
+print(ways)

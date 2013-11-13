@@ -19,7 +19,7 @@ def rotate(n):
 		rotationslist.append(rot)
 		rot = rot[-1] + rot[:-1]
 
-	return map(int,rotationslist)
+	return list(map(int,rotationslist))
 
 def isCircularPrime(n):
 	"""Returns boolean whether all rotations of digits are prime"""
@@ -41,4 +41,4 @@ def main(n):
 
 	return numberCircularPrimes
 
-print main(1000000)
+print(main(1000000))

@@ -5,7 +5,7 @@ def loadTriangle():
 	f = open("18_triangle.txt", 'r')
 	triangle = f.read().split("\n")
 	for row in range(len(triangle)):
-		triangle[row] = map(int, triangle[row].split())
+		triangle[row] = list(map(int, triangle[row].split()))
 	return triangle
 
 def addBottom(triangle):
@@ -35,4 +35,4 @@ def main():
 		triangle = addBottom(triangle)
 	return triangle[0][0]
 
-print main()
+print(main())

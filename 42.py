@@ -1,5 +1,5 @@
 import string
-letterscore = dict(zip(string.ascii_lowercase, range(1, 27)))
+letterscore = dict(list(zip(string.ascii_lowercase, list(range(1, 27)))))
 triangle = [x*(x+1)/2 for x in range(1000)]
 
 f = open("words.txt", "r")
@@ -20,4 +20,4 @@ for word in wordlist:
 	if wordscore in triangle:
 		trianglewords += 1
 
-print trianglewords
+print(trianglewords)

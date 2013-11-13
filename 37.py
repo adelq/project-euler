@@ -37,4 +37,4 @@ while len(truncprimes) < 11:
 		truncprimes.append(numgen)
 	numgen += 1
 
-print sum(truncprimes)
+print(sum(truncprimes))

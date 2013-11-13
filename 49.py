@@ -43,4 +43,4 @@ for sequence in midpointList:
 for i in permutationList:
 	for j in range(len(i)):
 		i[j] = str(i[j])
-	print "".join(i[:-1])
+	print("".join(i[:-1]))

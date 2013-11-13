@@ -8,4 +8,4 @@ productlist = []
 for digitpair in digitlist:
 	productlist.append(int(digitpair[0])*int(digitpair[1])*int(digitpair[2])*int(digitpair[3])*int(digitpair[4]))
 
-print max(productlist)
+print(max(productlist))

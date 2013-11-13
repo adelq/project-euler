@@ -15,4 +15,4 @@ while primes[-1] < 2000000:
 		primes.append(i)
 
 primes.pop()
-print sum(primes)
+print(sum(primes))

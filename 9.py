@@ -15,4 +15,4 @@ for x in range(N):
 for triplet in pythlist:
 	tripsum = triplet[0] + triplet[1] + triplet[2]
 	if tripsum == 1000:
-		print triplet[0] * triplet[1] * triplet[2]
+		print(triplet[0] * triplet[1] * triplet[2])

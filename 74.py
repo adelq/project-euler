@@ -44,4 +44,4 @@ def main(limit):
 			numberFactorialChains += 1
 	return numberFactorialChains
 
-print main(1000000)
+print(main(1000000))

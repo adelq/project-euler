@@ -8,4 +8,4 @@ def fib(n):
 x = 0
 while len(str(fib(x))) < 1000:
 	x += 1
-print x
+print(x)

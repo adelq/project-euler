@@ -30,4 +30,4 @@ def main(limit):
 			numberLychrels += 1
 	return numberLychrels
 
-print main(10000)
+print(main(10000))

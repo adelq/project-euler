@@ -9,4 +9,4 @@ for i in range(1000):
 		if palindrome(product):
 			palindromelist.append(product)
 
-print max(palindromelist)
+print(max(palindromelist))

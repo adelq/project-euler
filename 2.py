@@ -15,4 +15,4 @@ for i in range(33):
 	if fiblist[i] % 2 == 0:
 		summation += fiblist[i]
 
-print summation
+print(summation)

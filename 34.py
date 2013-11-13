@@ -8,4 +8,4 @@ for num in range(3,100000):
 	if num == strsum:
 		factorialdigit.append(num)
 
-print sum(factorialdigit)
+print(sum(factorialdigit))

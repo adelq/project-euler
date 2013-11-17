@@ -1,6 +1,9 @@
 from math import sqrt
 
 def FindAllDivisors(x):
+  """
+  Returns number of divisors for given number
+  """
 	divList = []
 	y = 1
 	while y <= sqrt(x):

@@ -9,4 +9,4 @@ def hex(n):
 pentset = set(pent(x) for x in range(50000))
 hexset = set(hex(x) for x in range(50000))
 
-print pentset & hexset
+print(pentset & hexset)

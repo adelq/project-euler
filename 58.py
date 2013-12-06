@@ -41,5 +41,5 @@ while primeRatio > 0.10:
 	sideLen += 2
 
 # Adjust sidelength by 2
-print sideLen - 2
-print primeRatio
+print(sideLen - 2)
+print(primeRatio)

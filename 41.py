@@ -22,4 +22,4 @@ for i in permutations(digits, len(digits)):
 		if i > maxPrime:
 			maxPrime = i
 
-print maxPrime
+print(maxPrime)

@@ -1,4 +1,4 @@
-from itertools import product,cycle,izip
+from itertools import product,cycle
 
 def loadWords():
 	"""
@@ -7,10 +7,10 @@ def loadWords():
 	Depending on the size of the word list, this function may
 	take a while to finish.
 	"""
-	print "Loading word list from file..."
+	print("Loading word list from file...")
 	inFile = open("59_words.txt", 'r')
 	wordList = inFile.read().split()
-	print "  ", len(wordList), "words loaded."
+	print("  ", len(wordList), "words loaded.")
 	return wordList
 
 wordList = loadWords()
@@ -56,17 +56,17 @@ def ascii(cipherList):
 	for char in cipherList:
 		decryptedList.append(chr(int(char)))
 	
-	return "".join(map(chr, map(int, cipherList)))
+	return "".join(map(chr, list(map(int, cipherList))))
 
 def decrypt(key):
 	""" Decrypts story using given key using an XOR cipher """
 	data = ascii(getCipherList())
-	return "".join(chr(ord(x) ^ ord(y)) for (x,y) in izip(data, cycle(key)))
+	return "".join(chr(ord(x) ^ ord(y)) for (x,y) in zip(data, cycle(key)))
 
 def asciisum(text):
 	""" Returns the sum of ASCII codes in a given string """
 	text = list(text)
-	text = map(ord, text)
+	text = list(map(ord, text))
 	return sum(text)
 
 def main():
@@ -78,7 +78,7 @@ def main():
 	The function returns the sum of the ASCII codes of the resulting decrypted
 	text.
 	"""
-	lowercase = map(chr, range(97, 123))
+	lowercase = list(map(chr, list(range(97, 123))))
 
 	# Generate a list of possible keys
 	keylist = []
@@ -97,4 +97,4 @@ def main():
 
 	return asciisum(decrypt(bestKey))
 
-print main()
+print(main())

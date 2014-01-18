@@ -9,4 +9,4 @@ for i in range(1000000):
 		if palindrome(str(bin(i)[2::])):
 			doublebase.append(i)
 
-print sum(doublebase)
+print(sum(doublebase))

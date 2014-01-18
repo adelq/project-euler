@@ -11,6 +11,6 @@ def sqsum(num):
 	return s**2
 
 def main(num):
-	print sqsum(num) - sumsq(num)
+	print(sqsum(num) - sumsq(num))
 
 main(100)

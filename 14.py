@@ -20,4 +20,4 @@ def main():
 			max = seq(i)
 	return maxnum
 
-print main()
+print(main())

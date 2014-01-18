@@ -13,4 +13,4 @@ def prime_factors(n):
 
 pfs = prime_factors(600851475143)
 largest_prime_factor = max(pfs)
-print largest_prime_factor
+print(largest_prime_factor)

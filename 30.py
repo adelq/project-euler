@@ -5,4 +5,4 @@ for number in range(1000000):
 		fifthsum += int(digit)**5
 	if fifthsum == number and number > 1 and number not in fifthlist:
 		fifthlist.append(number)
-print fifthlist
+print(fifthlist)

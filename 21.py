@@ -18,4 +18,4 @@ for a in range(1,10000):
 	if d(a) == b and d(b) == a and b != 1 and a != b:
 		amicablesum += a
 
-print amicablesum
+print(amicablesum)

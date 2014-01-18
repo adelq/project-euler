@@ -19,4 +19,4 @@ for num in range(10,100):
 				if Fraction(num,den) == Fraction(int(str(num)[0]) , int(str(den)[1])):
 					fractionsum *= Fraction(num,den)
 
-print fractionsum
+print(fractionsum)

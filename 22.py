@@ -1,5 +1,5 @@
 import string
-letterscore = dict(zip(string.ascii_lowercase, range(1, 27)))
+letterscore = dict(list(zip(string.ascii_lowercase, list(range(1, 27)))))
 
 f = open("names.txt", "r")
 f = f.read()
@@ -18,4 +18,4 @@ for i in range(len(namelist)):
 		wordscore += letterscore[char]
 	namescoresum += (i + 1) * wordscore
 
-print namescoresum
+print(namescoresum)

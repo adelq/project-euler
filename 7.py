@@ -14,4 +14,4 @@ while len(primes) < 10001:
 	if prime(i):
 		primes.append(i)
 
-print i
+print(i)

@@ -1,4 +1,5 @@
 from math import sqrt
+from functools import reduce
 
 def appendEs2Sequences(sequences,es):
 	result=[]
@@ -37,7 +38,7 @@ def factorGenerator(n):
 def divisors(n):
 	factors = factorGenerator(n)
 	divisors=[]
-	listexponents=[map(lambda x:k**x,range(0,factors[k]+1)) for k in factors.keys()]
+	listexponents=[[k**x for x in range(0,factors[k]+1)] for k in list(factors.keys())]
 	listfactors=cartesianproduct(listexponents)
 	for f in listfactors:
 		divisors.append(reduce(lambda x, y: x*y, f, 1))
@@ -64,7 +65,7 @@ def main():
 	for i in range(1,64000000):
 		if is_square(o2(i)):
 			divsqsum += o2(i)
-			print o2(i)
-	print divsqsum
+			print(o2(i))
+	print(divsqsum)
 
 main()

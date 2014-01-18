@@ -5,4 +5,4 @@ for a in range(2,101):
 		if power not in powerlist:
 			powerlist.append(power)
 
-print len(powerlist)
+print(len(powerlist))

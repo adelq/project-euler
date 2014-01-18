@@ -19,7 +19,7 @@ def main():
 				if isPandigital(str(i) + str(j) + str(product)):
 					if product not in productsList:
 						productsList.append(product)
-						print i,j,product
+						print(i,j,product)
 	
 	# Covers 1 digit * 4 digits
 	for i in range(2,9):
@@ -29,8 +29,8 @@ def main():
 				if isPandigital(str(i) + str(j) + str(product)):
 					if product not in productsList:
 						productsList.append(product)
-						print i,j,product
+						print(i,j,product)
 
 	return sum(productsList)
 
-print main()
+print(main())

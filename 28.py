@@ -1,6 +1,6 @@
 def main(by):
 	diagonal = (by+1)*0.5
-	print spiral(diagonal)
+	print(spiral(diagonal))
 
 def spiral(d):
 	if d == 1:

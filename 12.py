@@ -1,6 +1,9 @@
 from math import sqrt
 
 def FindAllDivisors(x):
+  """
+  Returns number of divisors for given number
+  """
 	divList = []
 	y = 1
 	while y <= sqrt(x):
@@ -14,7 +17,7 @@ numgen = 1
 while True:
 	trianglenumber = numgen*(numgen+1)/2
 	if FindAllDivisors(trianglenumber) > 500:
-		print trianglenumber
+		print(trianglenumber)
 		break
 	else:
 		numgen += 1

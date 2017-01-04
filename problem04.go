@@ -6,16 +6,16 @@ import (
 )
 
 func main() {
-	var max_palindrome int
+	var maxPalindrome int
 	for i := 0; i < 1000; i++ {
 		for j := i; j < 1000; j++ {
 			product := i * j
-			if palindrome(product) && product > max_palindrome {
-				max_palindrome = product
+			if palindrome(product) && product > maxPalindrome {
+				maxPalindrome = product
 			}
 		}
 	}
-	fmt.Println(max_palindrome)
+	fmt.Println(maxPalindrome)
 }
 
 func palindrome(n int) bool {

@@ -9,14 +9,14 @@ const n = "731671765313306249192251196744265747423553491949349698352031277450632
 const l = 13
 
 func main() {
-	var max_product int
+	var maxProduct int
 	for i := 0; i < len(n)-l; i++ {
 		product := string_product(n[i : i+l])
-		if product > max_product {
-			max_product = product
+		if product > maxProduct {
+			maxProduct = product
 		}
 	}
-	fmt.Println(max_product)
+	fmt.Println(maxProduct)
 }
 
 func string_product(n string) int {
